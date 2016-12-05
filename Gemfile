@@ -41,7 +41,6 @@ group :test do
   gem 'rspec-rails' #The RSpec testing framework with Rails integrations
   gem 'capybara'
   gem 'capybara-email' #Easily test ActionMailer and Mail messages in your Capybara integration tests
-  gem 'capybara-webkit'  # To test JS
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
