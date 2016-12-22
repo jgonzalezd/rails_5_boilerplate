@@ -24,7 +24,7 @@
 #  * zeus: 'zeus rspec' (requires the server to be started separately)
 #  * 'just' rspec: 'rspec'
 
-guard :rspec, cmd: "bin/rspec", all_on_start: true do
+guard :rspec, cmd: "spring rspec", all_on_start: true do
   require "guard/rspec/dsl"
   dsl = Guard::RSpec::Dsl.new(self)
 
@@ -41,7 +41,6 @@ guard :rspec, cmd: "bin/rspec", all_on_start: true do
   dsl.watch_spec_files_for(ruby.lib_files)
 
   # Rails files
-  #FIXME: No need for views
   rails = dsl.rails(view_extensions: %w(erb haml slim))
   dsl.watch_spec_files_for(rails.app_files)
   dsl.watch_spec_files_for(rails.views)

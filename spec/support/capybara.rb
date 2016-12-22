@@ -1,3 +1,6 @@
+# require 'capybara/rspec'
+# require 'capybara/email/rspec'
+
 Capybara.default_driver = :rack_test
 Capybara.server_port = 3000
 Capybara::Webkit.configure do |config|
