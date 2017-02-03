@@ -45,6 +45,10 @@ GEM
       rake (>= 10.4, < 12.0)
     arel (7.1.4)
     bcrypt (3.1.11)
+    breakfast (0.4.2)
+      actioncable (~> 5.0)
+      listen (>= 3.0)
+      rails (~> 5.0)
     builder (3.2.2)
     byebug (9.0.6)
     capybara (2.7.1)
@@ -245,6 +249,7 @@ PLATFORMS
 DEPENDENCIES
   annotate
   bcrypt (~> 3.1.7)
+  breakfast
   byebug
   capybara
   capybara-email
@@ -267,4 +272,4 @@ DEPENDENCIES
   web-console
 
 BUNDLED WITH
-   1.13.6
+   1.14.3
