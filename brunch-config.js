@@ -33,7 +33,8 @@ module.exports = {
     globals: {
       $: "jquery",
       jQuery: "jquery",
-      breakfast: "breakfast-rails"
+      breakfast: "breakfast-rails",
+      Vue: 'vue/dist/vue.common.js'
     }
   }
 };

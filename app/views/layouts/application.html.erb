@@ -3,11 +3,7 @@
   <head>
     <title>BoilerplateRails5</title>
     <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag "app.css" %>
-    <%= javascript_include_tag "vendor.js" %>
-    <%= javascript_include_tag "app.js" %>
-    <script>require('frontend/js/app').init();</script>
-    <%= breakfast_autoreload_tag %>
+
     <!--
     stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
@@ -15,6 +11,15 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div id="root">
+      {{ message }}
+      <%= yield %>
+    </div>
+
+    <%= stylesheet_link_tag "app.css" %>
+    <%= javascript_include_tag "vendor.js" %>
+    <%= javascript_include_tag "app.js" %>
+    <script>require('frontend/js/app').init();</script>
+    <%= breakfast_autoreload_tag %>
   </body>
 </html>
