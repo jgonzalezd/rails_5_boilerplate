@@ -9,7 +9,7 @@
 import Hello from './components/Hello';
 // Import this if you wish to use CSS in your .vue files.
 // See section below for more information.
-// import "vueify/lib/insert-css";
+import "vueify/lib/insert-css";
 
 let App = {
   init() {
