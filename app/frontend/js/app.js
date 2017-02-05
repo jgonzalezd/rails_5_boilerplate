@@ -6,7 +6,7 @@
 // Require https://github.com/rails/jquery-ujs
 // require("jquery-ujs");
 
-// import Hello from './components/hello';
+import Hello from './components/Hello';
 // Import this if you wish to use CSS in your .vue files.
 // See section below for more information.
 // import "vueify/lib/insert-css";
@@ -15,10 +15,8 @@ let App = {
   init() {
       new Vue({
         el: '#root',
-        data() {
-          return {
-            message: "Hello from Vue!"
-          }
+        components: {
+          'hello': Hello
         }
       })
   }

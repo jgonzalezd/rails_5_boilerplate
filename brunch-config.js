@@ -8,6 +8,11 @@ module.exports = {
     },
     stylesheets: {
       joinTo: 'app.css'
+    },
+    templates: {
+      joinTo:{
+        'app.js': "app/frontend/js/components/*.vue"
+      }
     }
   },
 

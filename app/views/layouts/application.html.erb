@@ -8,15 +8,15 @@
     stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
      -->
+     <%= stylesheet_link_tag "app.css" %>
   </head>
 
   <body>
     <div id="root">
-      {{ message }}
-      <%= yield %>
+      <hello></hello>
     </div>
+    <%= yield %>
 
-    <%= stylesheet_link_tag "app.css" %>
     <%= javascript_include_tag "vendor.js" %>
     <%= javascript_include_tag "app.js" %>
     <script>require('frontend/js/app').init();</script>
